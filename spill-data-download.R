@@ -29,7 +29,10 @@ data <- data_raw %>% clean_names()
   
   
 today <- today()
+now <- now()
 
+data <- data %>% mutate (time_downloaded = now)
+data <- data %>% mutate (date_downloaded = today)
     
 write_json(data, paste0("data/spill_data_",today,".json"))
 write_json(data, paste0("spill-data.json"))

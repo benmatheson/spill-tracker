@@ -20,7 +20,7 @@ library(lubridate)
 # https://dec.alaska.gov/Applications/SPAR/PublicMVC/PERP/GetSearchedSpills?spillDateStart=01%2F01%2F2023%2000%3A00%3A00&spillDateEnd=04%2F22%2F2023%2000%3A00%3A00
 
 
-url <- "https://dec.alaska.gov/Applications/SPAR/PublicMVC/PERP/GetSearchedSpills?spillDateStart=01%2F01%2F2023%2000%3A00%3A00&spillDateEnd=12%231%2F2023%2000%3A00%3A00"
+url <- "https://dec.alaska.gov/Applications/SPAR/PublicMVC/PERP/GetSearchedSpills?spillDateStart=01%2F01%2F2023%2000%3A00%3A00&spillDateEnd=12%231%2F2024%2000%3A00%3A00"
 
 
 data_raw <- read_csv(url)
